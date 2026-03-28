@@ -35,7 +35,7 @@ $query = mysqli_query($koneksi, "SELECT * FROM foto INNER JOIN album ON foto.alb
     <div class="container mt-4">
         <div class="text-center mb-4">
             <h1>Selamat Datang di GalleryWeb</h1>
-            <p class="text-muted">Deskripsi Singkat Tentang Web Galeri Anda.</p>
+            <p class="text-muted">Sebuah ruang visual untuk mengapresiasi keindahan kendaraan, dari detail terkecil hingga siluet paling ikonik.</p>
         </div>
         <div class="row">
             <?php while ($data = mysqli_fetch_array($query)) { ?>
