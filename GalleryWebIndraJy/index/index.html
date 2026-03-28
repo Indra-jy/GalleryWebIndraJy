@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GalleryWeb</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        /* Agar body minimal setinggi layar */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* Konten utama akan mengisi ruang yang tersisa */
+        .main-content {
+            flex: 1;
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        /* Footer tetap di bawah */
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">GalleryWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav me-auto"></div>
+                <a href="#" class="btn btn-outline-light mx-1">Daftar</a>
+                <a href="#" class="btn btn-outline-light mx-1">Masuk</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container mt-4">
+            <div class="text-center mb-4">
+                <h1>Selamat Datang di GalleryWeb</h1>
+                <p class="text-muted">Sebuah ruang visual untuk mengapresiasi keindahan kendaraan, dari detail terkecil hingga siluet paling ikonik.</p>
+            </div>
+            
+            <!-- Gallery Cards -->
+            <div class="row">
+                <!-- Card 1: GTR R35 2077 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=500&h=200&fit=crop" class="card-img-top" alt="GTR R35 2077">
+                        <div class="card-body">
+                            <h5 class="card-title">GTR R35 2077</h5>
+                            <p class="text-muted">Album: Nissan</p>
+                            <a href="#" class="btn btn-outline-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2: GTR R34 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=500&h=200&fit=crop" class="card-img-top" alt="GTR R34">
+                        <div class="card-body">
+                            <h5 class="card-title">GTR R34</h5>
+                            <p class="text-muted">Album: Nissan</p>
+                            <a href="#" class="btn btn-outline-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Silvia S14 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=500&h=200&fit=crop" class="card-img-top" alt="Silvia S14">
+                        <div class="card-body">
+                            <h5 class="card-title">Silvia S14</h5>
+                            <p class="text-muted">Album: Nissan</p>
+                            <a href="#" class="btn btn-outline-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>© 2025 GalleryWeb | Kukuh Indra Maulana</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
